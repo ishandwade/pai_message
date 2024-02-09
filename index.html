@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.14159</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Pragathi Pai</a>
+        <ul>
+            <li><a href="#sec" class="active">1 Message</a></li>
+            <li><a href="https://meet.google.com/omy-tixb-mye">Meet me!</a></li>
+            <li><a href="">Click Me!</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" alt="" id="stars">
+        <img src="moon.png" alt="" id="moon">
+        <img src="mountains_behind.png" alt="" id="mountains_behind">
+        <h2 id="text">Youre Doing Great!</h2>
+        <!-- <a href="#sec" id="btn">Explore</a> -->
+        <img src="mountains_front.png" alt="" id="mountains_front">
+    </section>
+    <div id="sec">
+        <h2>You are legit the best</h2>
+        <p>You are legit the best girlfriend i couldve ever found you know. Tbh i kinda find it cute when youre mad. its like even a lion being the king of the jungle is just a bitch in front of his wife. I dont think i couldve done better than you, and i dont think i ever will. I know youre working super hard to get your shit straight and im sure you will. Dont let the pressure get to you and think straight. Youve got this. Im always by your side here, ready to annoy you whenever so let me know when i can come and annoy you next. I LOVE YOU, ALWAYS!</p>
+        <p>Heres a small poem for you</p>
+        <br>
+        <p>This girl tries so hard,</p>
+        <p>To be complete everyday,</p>
+        <p>even though she is scarred,</p>
+        <p>shes the fruit from pray!</p>
+        <br>
+        <p>a flaw is a gift,</p>
+        <p>she doesnt realise,</p>
+        <p>it just makes us human,</p>
+        <p>shes a mans ultimate prize.</p>
+        <br>
+        <p>Her smile and her charm,</p>
+        <p>did more than just harm,</p>
+        <p>I fell for her suddenly,</p>
+        <p>now how can i stay calm?</p>
+        <br>
+        <p>a life ahead,</p>
+        <p>we have got,</p>
+        <p>lets not overthink,</p>
+        <p>you are worth my only shot!</p>
+        <br>
+        <br>
+
+        <p>I know the rhyme scheme kinda sucks and you could make a better one, so go easy on me Grammar Nazi</p>
+        <p>I LOVE YOU</p>
+
+        <p>-Regards</p>
+        <p>Ishan Dwivedi</p>
+
+        <p></p>
+    </div>
+
+    <script>
+        let stars=document.getElementById("stars");
+        let moon=document.getElementById("moon");
+        let mountains_behind=document.getElementById("mountains_behind");
+        let text=document.getElementById("text");
+        let mountains_front=document.getElementById("mountains_front");
+        let btn=document.getElementById("btn");
+        let header=document.querySelector('header');
+
+        window.addEventListener('scroll',function(){
+            let value=window.scrollY;
+            stars.style.left=value+'px';
+            stars.style.top=value+'px';
+            mountains_behind.style.top=0.5*value+'px';
+            mountains_front.style.top=value*0+'px';
+            text.style.marginRight=value*4+'px';
+            text.style.marginTop=value*1.15+'px'
+            moon.style.top=value*0.75+'px';
+            btn.style.top=value*1.15+'px';
+            header.style.top=value*0.5+'px';
+            
+        })
+
+    </script>
+
+    
+</body>
+</html>
